@@ -1,20 +1,12 @@
-import React, { useState } from "react";
-import api from "./api";
-import Votacao from "./pages/Votacao";
+import React from "react";
+import Musicas from "./pages/Musicas";
 
+import './html-css-template/css/reset.css';
+import './html-css-template/css/style.css';
 function App() {
-  const [musica, setMusica] = useState([]);
-
-  function listar(){
-    api.get().then(res => {
-      console.log(res.data);
-      setMusica(res.data);
-    })
-    .catch(err => console.log(err));
-  }
   return (
     <>
-    <Votacoes/>
+      <Musicas/>
     </>
   );
 }

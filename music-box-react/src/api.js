@@ -1,7 +1,5 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const api = axios.create({
-    baseURL: "https://62423a5dd126926d0c4f2ce6.mockapi.io/music"
-});
+const api = axios.create({baseURL: "https://62423a60b6734894c14e7a97.mockapi.io/music"})
 
 export default api;
