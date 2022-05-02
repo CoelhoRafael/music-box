@@ -1,3 +1,4 @@
+import Home from "./pages/Home";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -8,7 +9,8 @@ function Rotas(){
     return(
         <BrowserRouter>
         <Routes>
-            <Route path="/" exact element={<Musicas/>}/>       
+            <Route path="/" exact element={<Home/>}/>       
+            <Route path="/musicas" exact element={<Musicas/>}/>
             <Route path="/adicionar" exact element={<Adicionar/>}/>
         </Routes>
         </BrowserRouter>
